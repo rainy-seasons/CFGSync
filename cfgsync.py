@@ -20,7 +20,6 @@ def sync_cfg():
 				if STEAM_ID in f:
 					continue
 				if "730" in f and "config.cfg" in f:
-					dirs.append(str(f))
 					copy(MAIN_PATH + "/config.cfg", f)
 			except OSError as err:
 				print("OS error: {0}".format(err))
